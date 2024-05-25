@@ -6,7 +6,7 @@
 /*   By: nhimad <nhimad@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/18 16:39:48 by nhimad            #+#    #+#             */
-/*   Updated: 2024/05/24 12:50:26 by nhimad           ###   ########.fr       */
+/*   Updated: 2024/05/25 11:29:33 by nhimad           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,14 @@
 # define PUSH_SWAP_BONUS_H
 
 # include <limits.h>
-# include <stdlib.h>
-# include <unistd.h>
 # include "../get_next_line/get_next_line.h"
 # include "../libft/libft.h"
 
-typedef struct n_list
+typedef struct s_list
 {
 	int				number;
-	struct n_list	*next;
-	struct n_list	*previous;
+	struct s_list	*next;
+	struct s_list	*previous;
 }					t_num_list;
 
 // free the arg and list, and print the "error" message.
