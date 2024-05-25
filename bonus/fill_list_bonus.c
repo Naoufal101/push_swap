@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   fill_list_bonus.c                                  :+:      :+:    :+:   */
+/*   fill_list.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nhimad <nhimad@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/18 16:21:25 by nhimad            #+#    #+#             */
-/*   Updated: 2024/05/24 12:41:08 by nhimad           ###   ########.fr       */
+/*   Updated: 2024/05/25 15:13:31 by nhimad           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap_bonus.h"
+#include "push_swap.h"
 
 void	l_free(t_num_list **l)
 {
@@ -29,25 +29,41 @@ void	l_free(t_num_list **l)
 	}
 }
 
+int	check_number(char **arg, t_num_list **a, int i)
+{
+	int	bool;
+	int	c;
+	int	j;
+
+	c = 0;
+	bool = 0;
+	j = ft_sign(arg, a, i);
+	while (arg[i][j])
+	{
+		if (!ft_isdigit(arg[i][j]))
+			error_free(arg, a);
+		if (bool)
+			c++;
+		else if (arg[i][j] != '0')
+			bool = 1;
+		j++;
+	}
+	return (c);
+}
+
 void	ft_fill_list(char **arg, t_num_list **a)
 {
 	int	i;
-	int	j;
+	int	count;
 	int	number;
 
 	i = 0;
 	while (arg[i])
 	{
-		j = ft_sign(arg, a, i);
-		while (arg[i][j])
-		{
-			if (!ft_isdigit(arg[i][j]))
-				error_free(arg, a);
-			j++;
-		}
+		count = check_number(arg, a, i);
 		number = ft_isint(ft_atol(arg[i]), arg, a);
 		ft_search(arg, a, number);
-		if (l_add_back(a, number) || j > 11)
+		if (count > 11 || l_add_back(a, number))
 			error_free(arg, a);
 		i++;
 	}
