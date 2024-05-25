@@ -6,11 +6,10 @@
 /*   By: nhimad <nhimad@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/18 15:40:58 by nhimad            #+#    #+#             */
-/*   Updated: 2024/05/22 15:15:09 by nhimad           ###   ########.fr       */
+/*   Updated: 2024/05/25 11:38:25 by nhimad           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft/libft.h"
 #include "push_swap.h"
 
 int	*ft_array(t_num_list *node, int l)

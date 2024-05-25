@@ -6,11 +6,10 @@
 /*   By: nhimad <nhimad@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/18 16:21:12 by nhimad            #+#    #+#             */
-/*   Updated: 2024/05/24 12:04:04 by nhimad           ###   ########.fr       */
+/*   Updated: 2024/05/25 11:38:29 by nhimad           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft/libft.h"
 #include "push_swap.h"
 
 void	ft_free(char **str)

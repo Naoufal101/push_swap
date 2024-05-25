@@ -6,12 +6,11 @@
 /*   By: nhimad <nhimad@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/18 20:38:32 by nhimad            #+#    #+#             */
-/*   Updated: 2024/05/18 20:46:17 by nhimad           ###   ########.fr       */
+/*   Updated: 2024/05/25 11:38:59 by nhimad           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-#include "libft/libft.h"
 
 void	mc_supporter(t_num_list *b, t_num_list *a, int *c)
 {

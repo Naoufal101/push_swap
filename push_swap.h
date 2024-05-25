@@ -6,7 +6,7 @@
 /*   By: nhimad <nhimad@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/18 16:39:48 by nhimad            #+#    #+#             */
-/*   Updated: 2024/05/25 11:28:39 by nhimad           ###   ########.fr       */
+/*   Updated: 2024/05/25 11:39:55 by nhimad           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <limits.h>
 # include <stdlib.h>
+# include "libft/libft.h"
 
 typedef struct s_list
 {

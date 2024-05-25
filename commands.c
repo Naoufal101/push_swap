@@ -6,11 +6,10 @@
 /*   By: nhimad <nhimad@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/18 15:33:34 by nhimad            #+#    #+#             */
-/*   Updated: 2024/05/18 20:40:34 by nhimad           ###   ########.fr       */
+/*   Updated: 2024/05/25 11:38:34 by nhimad           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft/libft.h"
 #include "push_swap.h"
 
 void	swap(t_num_list **list)

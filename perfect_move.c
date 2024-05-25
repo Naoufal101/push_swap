@@ -6,11 +6,10 @@
 /*   By: nhimad <nhimad@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/18 16:49:03 by nhimad            #+#    #+#             */
-/*   Updated: 2024/05/18 19:58:01 by nhimad           ###   ########.fr       */
+/*   Updated: 2024/05/25 11:38:12 by nhimad           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft/libft.h"
 #include "push_swap.h"
 
 void	move_b(t_num_list **b, int c, int l)
