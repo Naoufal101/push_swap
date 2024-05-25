@@ -89,6 +89,7 @@ int	main(int c, char **arg)
 		while (str)
 		{
 			print_command(str, &a, &b);
+			free(str);
 			str = get_next_line(0);
 		}
 		if (not_sorted(a) || b)
